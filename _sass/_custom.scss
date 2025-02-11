@@ -58,6 +58,18 @@ background-color: var(--bs-pink);
 border-color: var(--bs-pink);
 }
 
+.btn-secondary {
+color: #fff;
+background-color: #af4bbd;
+border-color: #eba9f5;
+}
+
+.btn-secondary.active {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-orange);
+    color: #fff;
+}
+        
 .next-buttons {
     margin-top: 3rem;
     margin-bottom: 10rem;
