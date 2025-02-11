@@ -1,23 +1,26 @@
-<meta charset="utf-8">
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>{{ page.title | escape }} | {{ site.title | escape }}</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+<title>{{ site.title }}</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://cdil.lib.uidaho.edu/favicon.ico">
 <!--
+
   _____     ____        __  _           ___       _ __   __       
  / ___/__  / / /__ ____/ /_(_)__  ___  / _ )__ __(_) /__/ /__ ____
 / /__/ _ \/ / / -_) __/ __/ / _ \/ _ \/ _  / // / / / _  / -_) __/
 \___/\___/_/_/\__/\__/\__/_/\___/_//_/____/\_,_/_/_/\_,_/\__/_/   
-   
-    built with CollectionBuilder-Sheets
-    https://github.com/CollectionBuilder/collectionbuilder-sheets
+                                                                
+    built with CollectionBuilder-CSV
+    https://github.com/CollectionBuilder/collectionbuilder-csv
 -->
-<meta name="generator" content="collectionbuilder-sheets" />
+<meta name="generator" content="collectionbuilder-csv" />
 <meta http-equiv="Content-Language" content="en-us" >
 
-<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/fluffy-happiness/assets/lib/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="/fluffy-happiness/assets/css/cb.css" type="text/css">
-<link rel="stylesheet" href="/fluffy-happiness/assets/lib/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="/fluffy-happiness/assets/css/cb.css" type="text/css">
+
+
 
 <meta name="description" content="20th century fire policy tried to draw a hard line between humans and fire. Indigenous knowledge is leading 21st century science to a deeper understanding of fire’s kinship with human communities. A project of the Confluence Lab.">
 <meta name="author" content="Isabel Marlens, Center for Digital Inquiry and Learning (CDIL), University of Idaho Library" >
@@ -42,6 +45,7 @@
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","headline":"Fire Lines","publisher": { "@context": "https://schema.org", "@type": "Organization", "name": "Center for Digital Inquiry and Learning (CDIL), University of Idaho Library", "url": "https://cdil.lib.uidaho.edu/", "logo": "https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png" },"description":"20th century fire policy tried to draw a hard line between humans and fire. Indigenous knowledge is leading 21st century science to a deeper understanding of fire’s kinship with human communities. A project of the Confluence Lab.","image":"https://cdil.lib.uidaho.edu/fluffy-happiness/objects/im-01-banner.jpg","url":"https://cdil.lib.uidaho.edu/fluffy-happiness/"}</script> 
 <!-- breadcrumbs schema -->
 <script type="application/ld+json">{"@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "item": { "@id": "https://cdil.lib.uidaho.edu/fire-lines/", "name": "Fire Lines" } },{ "@type": "ListItem", "position": 2, "item": { "@id": "https://cdil.lib.uidaho.edu/fire-lines/", "name": null } }] }</script>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBKDZC8C7F"></script>
@@ -75,33 +79,3 @@
             bottom: 1em;
         }
     </style>
-
-
-
-<!-- load style sheets -->
-{% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{% endif %}
-<link rel="stylesheet" href="{% if site.data.theme.bootswatch %}https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/{{ site.data.theme.bootswatch }}/bootstrap.min.css{% else %}{{ '/assets/lib/bootstrap.min.css' | relative_url }}{% endif %}" type="text/css">
-{% if page.layout == 'data' %}<link rel="stylesheet" type="text/css" href="{{ '/assets/lib/datatables/datatables.min.css' | relative_url }}">{% endif %}
-{% if page.layout == 'map' %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fullscreen.css' | relative_url }}">
-{% if site.data.theme.map-search == true %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fusesearch.css' | relative_url }}">{% endif %}
-{% if site.data.theme.map-cluster == true %}<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.Default.css' | relative_url }}">{% endif %}{% endif %}
-{% if layout.gallery == true or page.gallery == true %}<link rel="preload" href="{{ '/assets/lib/spotlight.bundle.js' | relative_url }}" as="script">{% endif %}
-
-{% comment %} 
-    Meta tags and analytics are adding during production build ONLY.
-    Production build environment is automatically used on gh-pages. 
-{% endcomment %}
-{%- if jekyll.environment == "production" -%}
-{% if site.noindex == true or page.noindex == true or layout.noindex == true %}<meta name="robots" content="noindex">{% endif %}
-{% include head/page-meta.html %}
-{% include head/analytics.html %}
-{% endif %}
-
-<script>
-    // include functions variable, necessary for Sheets pageinit to work! 
-    var includeFunctions = [ ]; 
-</script>
-
-<!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
