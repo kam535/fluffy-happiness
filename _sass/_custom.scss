@@ -43,7 +43,21 @@ transition: transform .3s ease-in-out;
 .bg-dark {
     background-color: #edb277!important
 }
-    
+
+.card-body {
+    color: #ffffff
+}
+
+.card {
+    background-color: #edb277
+}
+
+.btn-outline-primary:hover {
+color: #fff;
+background-color: var(--bs-pink);
+border-color: var(--bs-pink);
+}
+
 .next-buttons {
     margin-top: 3rem;
     margin-bottom: 10rem;
