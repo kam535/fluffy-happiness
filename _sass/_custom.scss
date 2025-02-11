@@ -25,6 +25,20 @@ body {
     margin-bottom: 2rem;
 }
 
+.offcanvas {
+position: fixed;
+bottom: 0;
+z-index: 1045;
+display: flex;
+flex-direction: column;
+max-width: 100%;
+visibility: hidden;
+background-color: #9cb7d2;
+background-clip: padding-box;
+outline: 0;
+transition: transform .3s ease-in-out;
+}
+
 .next-buttons {
     margin-top: 3rem;
     margin-bottom: 10rem;
