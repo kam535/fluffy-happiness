@@ -11,6 +11,8 @@ $base-font-size: {{ site.data.theme.base-font-size | default: '""' }};
 $text-color: {{ site.data.theme.text-color | default: '""' }};
 $link-color: {{ site.data.theme.link-color | default: '""' }};
 
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Edu+SA+Beginner:wght@400..700&display=swap');
+
 /* theme colors pulled from config-theme-colors */
 {% assign btns = site.data.config-theme-colors | where_exp: "item","item.color != nil" %}
 {% if btns != empty %}
