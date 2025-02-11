@@ -7,7 +7,7 @@ layout: page
                 <h1 class="display-2">{{ site.title }}</h1>
                 <p class="mb-0">{{ site.description }}</p>
             </div>
-            <a id="toc-box" class="py-3 px-5 display-6 fs-2 text-white bg-dark bg-opacity-75 rounded" href="/fluffy-happiness/browse.html" >Browse the Colllection &raquo;</a>     
+            <a id="toc-box" class="py-3 px-5 display-6 fs-2 text-white bg-dark bg-opacity-75 rounded" href="/fluffy-happiness/browse.html">Browse the Colllection &raquo;</a>     
         </div>
 
 {%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
