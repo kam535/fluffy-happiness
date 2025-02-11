@@ -2,6 +2,14 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
+<div id="home-banner" class="container-fluid mt-3 mb-5">
+            <div id="title-box" class="col-md-5 py-3 px-5 text-white bg-dark bg-opacity-75 rounded">
+                <h1 class="display-2">Fire Lines</h1>
+                <p class="mb-0">Exploring the Legacy of 1910's Great Fire in the Northwest</p>
+            </div>
+            <a id="toc-box" class="py-3 px-5 display-6 fs-2 text-white bg-dark bg-opacity-75 rounded" href="/fluffy-happiness/00_firelines.html" >Read the Essay &raquo;</a>     
+        </div>
+
 {%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
 <div class="row">
   <div class="col-md-8">
