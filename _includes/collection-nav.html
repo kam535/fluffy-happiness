@@ -8,12 +8,11 @@
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Fire Lines</h2>
+                <h2 class="offcanvas-title" id="offcanvasNavbarLabel">{{ page.title | escape }}</h2>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <p class="h5 mb-3">Exploring the Legacy of 1910's Great Fire in the Northwest</p>
-                <p><small>20th century fire policy tried to draw a hard line between humans and fire. Indigenous knowledge is leading 21st century science to a deeper understanding of fire’s kinship with human communities. A project of the Confluence Lab.</small></p>
+                <p class="h5 mb-3">{{ page.description | escape }}</p>
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fire Lines</a>
                         <div class="dropdown-menu dropdown-menu-dark">
